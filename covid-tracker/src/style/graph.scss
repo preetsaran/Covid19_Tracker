@@ -1,0 +1,28 @@
+.graph{
+    margin-top:0.5rem ;
+    height: 400px
+}
+
+.graph_heading{
+    color: rgb(76, 117, 242) ;
+     margin-top:1rem
+    }
+
+@media (max-width:990px){
+    .graph{
+        margin-top: 3rem;
+    }
+    
+}
+
+@media (max-width:500px){
+
+    .graph {
+      width:77vw;
+      height: 300px;
+    }
+
+    .graph_heading{
+         margin-bottom:5rem
+        }
+  }

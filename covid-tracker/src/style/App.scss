@@ -1,0 +1,101 @@
+@import 'common';
+@import 'infoCards';
+@import 'graph';
+@import 'Table';
+
+.App{
+
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    background-color: #f5f5fa38;
+
+    .material-icons{
+        font-size: 36px;
+        cursor: pointer
+    }
+
+    .app__left{
+        flex: 0.8;
+        margin: 2rem;
+    }
+    
+    .app__right{
+        margin-top: 2rem;
+    }
+
+    .app_header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    
+    .app_stats{
+    display: flex;
+    justify-content: space-evenly;
+    }
+    
+}
+
+@media (max-width:1200px){
+
+    .App{
+        flex-direction: column;
+        margin:0rem;
+        height: 250vh;
+
+        .app_stats{
+            margin-bottom: 5rem;
+        }
+        
+        .app__information{
+            height: 480px;
+        }
+
+        .app__left {
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 0%;
+            
+        }
+    }
+}
+
+@media (max-width:990px){
+
+    .App{
+        flex-direction: column;
+        margin:0rem;
+        height: 250vh;
+
+        .app__information{
+            height: 480px;
+        }
+
+        .app__left {
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 0%;
+            
+        }
+    }    
+
+}
+
+@media (max-width:650px){
+
+    .material-icons{
+        margin-right: 5rem;
+    }
+    
+    .app_stats{
+        flex-direction: column; 
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        }
+
+}
+
+
+

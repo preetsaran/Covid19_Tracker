@@ -1,0 +1,64 @@
+.infoCard {
+  flex: 1;
+}
+
+.infoCard:not(:last-child) {
+  margin-right: 10px;
+}
+
+.infoCard--selected {
+  border-top: 10px solid greenyellow;
+}
+
+.infoCard--red { 
+  border-color: red;
+}
+
+.infoCard__cases{
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+.infoCard__cases {
+  color: #cc1034;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoCard__total {
+  color: #6c757d;
+  font-weight: 700 !important;    
+  font-size: 0.8rem !important;
+  margin-top: 15px !important;
+}
+
+.Recovered{
+  color:#44d644
+}
+
+.Active{
+  color:rgb(17, 186, 243)
+}
+
+
+.Confirmed:hover{
+  background-color: #ff6b6b;
+}
+.Recovered:hover{
+  background-color: #cdf1cd;
+}
+
+.Active:hover{
+  background-color:#a3bdee;
+}
+
+.Deaths:hover{
+  background-color:rgb(216, 201, 201);
+}
+
+@media (max-width:990px){
+  .infoCard {
+    font-size: 100px;
+  }
+}
